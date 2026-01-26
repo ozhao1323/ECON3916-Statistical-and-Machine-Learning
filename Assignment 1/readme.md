@@ -108,14 +108,4 @@ project/
 - **Data Visualization**: Multi-series plotting with publication-quality formatting
 - **Communication**: Translation of technical findings into policy-relevant insights
 
----
 
-**Author**: Olivia [Last Name]  
-**Institution**: Northeastern University  
-**Contact**: [your email]  
-**LinkedIn**: [your profile]  
-**GitHub**: [your username]
-
----
-
-*This project was completed as part of [Course Name] at Northeastern University, demonstrating applied econometric analysis and data science skills.*
