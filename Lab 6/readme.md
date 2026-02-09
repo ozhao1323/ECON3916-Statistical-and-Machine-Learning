@@ -1,4 +1,4 @@
-# Lab 5: The Architecture of Bias
+# Lab 6: The Architecture of Bias
 
 ## Overview
 This project systematically investigates how data collection and sampling methodologies introduce structural biases in machine learning pipelines. Through empirical simulation and statistical testing, I analyzed the Data Generating Process (DGP) to identify and mitigate common sources of bias that compromise model validity.
