@@ -1,0 +1,15 @@
+# Recovering Experimental Truths via Propensity Score Matching
+
+## Objective
+Corrected for systematic selection bias in observational labor market data by constructing a propensity score matching pipeline to recover a credible estimate of the Average Treatment Effect (ATE) of job training on earnings.
+
+## Methodology
+- Modeled the selection process using **logistic regression** to estimate each unit's probability of treatment assignment given pre-treatment covariates — the propensity score
+- Applied **Nearest Neighbor Matching** to pair treated and control units with similar propensity scores, constructing a pseudo-experimental comparison group
+- Implemented the full pipeline in Python using Pandas and Scikit-Learn, operating on the observational subset of the Lalonde (1986) dataset
+
+## Key Findings
+The naïve observational estimate produced a treatment effect of **-$15,204** — a severe downward bias driven by selection into the control group of individuals with systematically higher pre-treatment earnings. After propensity score matching, the recovered ATE converged to approximately **+$1,800**, consistent with the experimental benchmark from the randomized subset. This delta of ~$17,000 quantifies the cost of ignoring selection bias in causal inference.
+
+## Takeaway
+This project demonstrates that observational data does not fail because it is "bad data" — it fails because naive comparisons ignore the **data generating process**. Propensity score matching reintroduces the logic of randomization post-hoc, transforming a biased observational study into a credible causal claim.
